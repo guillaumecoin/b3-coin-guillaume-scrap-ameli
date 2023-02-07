@@ -45,7 +45,7 @@ for doctor in doctors[:50]:
     doctor_infos.append({"name": name, "phone": phone, "address": address})
     print(name)
     df = pd.DataFrame(doctor_infos)
-    df.to_csv("doctors.csv", index=False)
+    df.to_csv("doctors.csv", header=True, encoding="UTF-16")
 
 
 
